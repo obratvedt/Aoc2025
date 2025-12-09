@@ -85,13 +85,6 @@ public static class FourthOfDecember
         public int Row { get; init; } = row;
         public int Column { get; init; } = column;
         public string Value { get; set; } = value;
-
-        public void Deconstruct(out int Row, out int Column, out string Value)
-        {
-            Row = this.Row;
-            Column = this.Column;
-            Value = this.Value;
-        }
     }
 }
     
