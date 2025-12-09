@@ -41,9 +41,9 @@ public static class ThirdOfDecember
             {
                 long maxValue = 0;
                 var currentList = e;
-                for (var numberOfTrailingElementsToKep = 12; numberOfTrailingElementsToKep >= 1; numberOfTrailingElementsToKep--)
+                for (var numberOfTrailingElementsToKeep = 12; numberOfTrailingElementsToKeep >= 1; numberOfTrailingElementsToKeep--)
                 {
-                    var maxValueInList = currentList[..^(numberOfTrailingElementsToKep-1)].Max();
+                    var maxValueInList = currentList[..^(numberOfTrailingElementsToKeep-1)].Max();
                     var indexOfMaxValue = currentList.IndexOf(maxValueInList);
                     maxValue = maxValue * 10 + maxValueInList;                    
                     currentList = currentList.Slice(indexOfMaxValue +1, currentList.Count-indexOfMaxValue -1);
